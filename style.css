@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  text-align: center;
+  overflow: hidden;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  height: 72px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 15px 50px;
+  margin: 0px 50px;
+}
+
+.navbar a:hover {
+  background-color: #111;
+}
+
+.column {
+  float: left;
+  margin-top: 72px;
+}
+
+.left {
+  float: left;
+  width: 47%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.image {
+  
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://images.unsplash.com/photo-1553272725-086100aecf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80) no-repeat center;
+}
+
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+  color: orange;
+  position: absolute;
+  text-align: right;
+  font-size: 55px;
+  width: 100%;
+  top: 50%;
+  right: 10%
+}
+
+h1::first-line {
+  font-size: 30px;
+}
+
+b {
+  font-size: 40px;
+}
+
+.blockquote {
+  height: 1800px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+blockquote { 
+  font-size: 40px;
+  font-family: 'IBM Plex Serif', serif;
+  font-style: italic;
+  color: white;
+  background-color: grey;
+  margin: 0px;
+  padding: 50px;
+  height: auto;
+  position: relative;
+}
+
+blockquote::before {
+  content: '”';
+  position: absolute;
+  top: -70px;
+  left: 25px;
+  transform: rotate(180deg);
+  font-size: 120px;
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+ font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+button {
+  background-color: #c1946a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+
+h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 120px;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 50px;
+  font-size: 25px;
+}
